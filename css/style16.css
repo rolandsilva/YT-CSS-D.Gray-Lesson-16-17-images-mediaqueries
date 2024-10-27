@@ -33,6 +33,19 @@ img {
 body {
     font-family: "Nunito", sans-serif;
     min-height: 100vh;
+    background-color: aliceblue;
+
+    /* background-image: linear-gradient(steelblue, purple, #fff); */
+    /* controls direction of gradient */
+    /* background-image: linear-gradient(to left, steelblue, #fff); */
+    /* background-image: linear-gradient(to left, steelblue, purple, #fff); */
+    /* background-image: url("../images/bubbles.png"); */
+    /* background-image: url("../images/bubbles.png"),
+        linear-gradient(to left, steelblue, #fff);
+    background-repeat: repeat-y, no-repeat;
+    background-position: right center;
+    background-size: 20%, auto; */
+    /* applies to image then gradient */
 }
 
 .container {
@@ -124,7 +137,7 @@ figcaption {
     text-align: center;
 }
 
-/* .example {
+.example {
     margin-top: 1rem;
     padding-left: 20px;
     border: 1px solid red;
@@ -133,4 +146,14 @@ figcaption {
 .example img {
     width: 25%;
     height: auto;
-}  */
+}
+
+.clip {
+    font-weight: 800;
+    font-size: 18rem;
+    text-align: center;
+    background-image: url("../images/scenic-2200x1331.png");
+    background-size: 100%;
+    text-transform: uppercase;
+    background-clip: ;
+}
