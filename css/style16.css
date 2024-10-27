@@ -1,0 +1,136 @@
+/* YT CSS Gray Lesson 16 Responsive images CSS */
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+/* begin reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    /* img are inline elements by default */
+}
+
+/* end reset */
+
+/* begin utility classes */
+.nowrap {
+    white-space: nowrap;
+}
+
+.offscreen {
+    /* hides the figcaption off screen but it is available for the screen readers */
+    position: absolute;
+    left: -10000px;
+}
+
+/* end utility classes */
+
+
+body {
+    font-family: "Nunito", sans-serif;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: rgb(251, 210, 156);
+    background-image: url("../images/map-2176x1451.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* positions image */
+    background-size: cover;
+}
+
+.hero {
+    border: 2px solid black;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+
+    /* puts a filter (darker) background over the whole hero section */
+
+    /* gray  filter */
+    /* background-color: hsla(0, 20%, 97%, 0.4); */
+    /* black filter */
+    /* background-color: hsla(0, 0%, 0%, 0.4); */
+    /* whitish filter */
+    background-color: hsla(0, 0%, 100%, 0.4);
+
+    /* background-image: url("../images/pat1.png"); */
+
+    /* background-image: url("../images/pat2.png"); */
+
+    /* background-image: url("../images/pat2-transparency.png"); */
+
+    /* background-image: url("../images/scenic-2200x1331.png"); */
+
+    /* very large background image  */
+    /* background-image: url("../images/map-2176x1451.png");
+    background-repeat: repeat;
+    background-size: cover;
+    background-color: rgb(251, 210, 156); */
+}
+
+.h1 {
+    font-size: 500%;
+    padding: .25rem;
+    text-shadow: 2px 2px 5px black;
+    /* puts drop shadow and shadow box */
+
+    color: white;
+    /* color: orange; */
+    /* color: brown; */
+    /* color: black; */
+
+    /* background-color: hsla(0, 20%, 97%, 0.4);
+    border-radius: 10px; */
+
+    /* hsl reduce transparency so background looks like shaded box */
+
+
+
+}
+
+.profile-pic-figure {
+    width: 35%;
+}
+
+.profile-pic-figure img {
+    /* these two settings make it responsive */
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+    min-width: 100px;
+    border: 5px double gray;
+    border-radius: 50%;
+}
+
+figure {
+    text-align: center;
+
+}
+
+figcaption {
+    display: inline-block;
+    width: auto;
+    outline: 1px solid red;
+    padding: 2px 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* .example {
+    margin-top: 1rem;
+    padding-left: 20px;
+    border: 1px solid red;
+}
+
+.example img {
+    width: 25%;
+    height: auto;
+}  */
