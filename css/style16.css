@@ -31,9 +31,12 @@ img {
 
 
 body {
+
     font-family: "Nunito", sans-serif;
     min-height: 100vh;
-    background-color: aliceblue;
+    /* background-color: rgb(0, 0, 0); */
+    /* background-color: aliceblue; */
+    background-color: white;
 
     /* background-image: linear-gradient(steelblue, purple, #fff); */
     /* controls direction of gradient */
@@ -155,5 +158,10 @@ figcaption {
     background-image: url("../images/scenic-2200x1331.png");
     background-size: 100%;
     text-transform: uppercase;
-    background-clip: ;
+    -webkit-background-clip: text;
+    /* makes it darker transparent */
+    /* color: hsla(0, 0%, 0%, 0.2); */
+    background-clip: text;
+    /* this is a fallback for browsers who dont support it */
+    color: transparent;
 }
