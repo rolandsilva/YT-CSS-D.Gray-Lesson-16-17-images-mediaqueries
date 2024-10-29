@@ -34,11 +34,21 @@ footer {
     /* aligns text in center */
 }
 
+.h1images {
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 0px 0 0px 0;
+    padding: 5px;
+    background-color: rgb(43, 173, 199);
+    border: 1px solid black;
+}
+
 header,
 footer {
     position: sticky;
     color: whitesmoke;
     background-color: #1e293b;
+    font-size: 1.0rem;
 }
 
 header {
@@ -61,7 +71,6 @@ main {
 footer {
     bottom: 0;
 }
-
 
 
 /* || small media query  */
