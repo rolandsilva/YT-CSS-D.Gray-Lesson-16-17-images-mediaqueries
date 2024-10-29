@@ -60,6 +60,15 @@ body {
     background-size: cover;
 }
 
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    /* margin: 5px 0 0px 0; */
+    padding: 5px;
+    background-color: rgb(43, 173, 199);
+    border: 1px solid black;
+}
+
 .hero {
     border: 2px solid black;
     padding: 20px;
@@ -94,7 +103,7 @@ body {
 
 .h1 {
     font-size: 500%;
-    padding: .25rem;
+    padding: .25rem 1rem;
     text-shadow: 2px 2px 5px black;
     /* puts drop shadow and shadow box */
 
